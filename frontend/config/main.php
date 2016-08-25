@@ -14,6 +14,17 @@ return [
     'defaultRoute' => 'home',
     'controllerNamespace' => 'frontend\modules\home\controllers',
     'components' => [
+        'view' => [
+            'theme' => [
+                'basePath' => '@app/themes/basic',
+                'baseUrl' => '@web/themes/basic',
+                'pathMap' => [
+                    //'@app/views' => '@app/themes/basic/views',
+                    //'@app/views' => '@app/themes/vapor/views',
+                    '@app/modules'=>'@app/themes/basic/modules',
+                ],
+            ],
+        ],
         'request' => [
             'csrfParam' => '_csrf-frontend',
         ],

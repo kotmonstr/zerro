@@ -18,6 +18,7 @@ class AdminAsset extends AssetBundle
         'LTE/dist/css/AdminLTE.min.css',
         'LTE/dist/css/skins/_all-skins.min.css',
         'LTE/style.css',
+        'LTE/custom.css',
     ];
     public $js = [
         'LTE/plugins/jQuery/jQuery-2.1.4.min.js',
@@ -42,9 +43,9 @@ class AdminAsset extends AssetBundle
 
     ];
     public $depends = [
-        //'yii\web\YiiAsset',
+       // 'yii\web\YiiAsset',
         //'yii\bootstrap\BootstrapAsset',
-        //'yii\bootstrap\BootstrapAsset',
+
     ];
 }
 
